@@ -23,13 +23,15 @@
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#categories">Categories</a></li>
-          <li><a href="#offer">Products</a></li>
-          <li><a href="#best-seller">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#best-sellers">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+
       <div class="Navigation">
-        <button class="searchButton">
+        <input type="search" id="searchInput" class="inputSearch" placeholder="search here...">
+        <button class="searchButton" id="search-btn">
           <ion-icon name="search-outline" aria-hidden="true" role="img"></ion-icon>
         </button>
         <button class="personButton">
@@ -38,7 +40,13 @@
         <button class="cartButton">
           <ion-icon name="cart-outline" aria-hidden="true" role="img"></ion-icon>
         </button>
+
       </div>
+<!-- 
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+      </div> -->
+
     </header>
     <main>
       <article>
@@ -53,7 +61,7 @@
 
         <!----------------------------------------- Best Categories ---------------------------------------------------------->
         <section class="categories" id="categories">
-          <h1 class="title-categories" >best<span> categories</span></h1>
+          <h1 class="title-categories">best<span> categories</span></h1>
           <div class="container-categories">
             <div class="card">
               <div class="img-categories"><img src="assets/images/category-1.jpg" /></div>
@@ -107,7 +115,7 @@
         </section>
         <!----------------------------------------- Best Sellers ---------------------------------------------------------->
         
-        <section class="seccion-best-seller" id="best-seller">
+        <section class="seccion-best-seller" id="best-sellers" >
           <div class="container-best-seller">
             <h1 class="titulo-best-seller"><span>Best</span> Seller</h1>
             <div>         
@@ -116,8 +124,8 @@
                   <div class="imgs-best-sellers">
                     <img src="assets/images/product-1.jpg" class="front">
                     <img src="assets/images/product-1_0.jpg" class="back">
-                    <button class="iconProducts iconProduct1" href="./product.html">
-                       <img src="assets/icons/addToCart.svg"  alt="heart" class="heart">
+                    <button id="product1" class="iconProducts" href="./product.html">
+                       <ion-icon name="bag-add-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
                     </button>
                     <div class="calificacion-estrellas">
                         <ion-icon name="star" ></ion-icon>
@@ -135,9 +143,14 @@
                 </li>
                 <li>
                   <div class="imgs-best-sellers">
+                    <button id="product2" class="iconProducts" >
+                      <ion-icon name="bag-add-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+                    </button>
                     <div class="holder">
                     <img src="assets/images/product-2.jpg" class="front">
                     <img src="assets/images/product-2_0.jpg" class="back">
+                    <div class="buttonContainer">
+                    </div>
                     <div class="calificacion-estrellas">
                         <ion-icon name="star" ></ion-icon>
                         <ion-icon name="star" ></ion-icon>
@@ -157,6 +170,11 @@
                     
                     <img src="assets/images/product-3.jpg" class="front">
                     <img src="assets/images/product-3_0.jpg" class="back">
+                    <div class="buttonContainer">
+                    <button id="product3" class="iconProducts" href="./product.html">
+                      <ion-icon name="bag-add-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+                   </button>
+                    </div>
                     <div class="calificacion-estrellas"> 
                         <ion-icon name="star" ></ion-icon>
                         <ion-icon name="star" ></ion-icon>
@@ -176,6 +194,9 @@
                    
                     <img src="assets/images/product-4.jpg" class="front">
                     <img src="assets/images/product-4_0.jpg" class="back">
+                    <button id="product4" class="iconProducts" href="./product.html">
+                      <ion-icon name="bag-add-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+                   </button>
                     <div class="calificacion-estrellas">
                         <ion-icon name="star" ></ion-icon>
                         <ion-icon name="star" ></ion-icon>
@@ -195,6 +216,9 @@
                     
                     <img src="assets/images/product-5.jpg" class="front">
                     <img src="assets/images/product-5_0.jpg" class="back">
+                    <button id="product5" class="iconProducts" href="./product.html">
+                      <ion-icon name="bag-add-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+                   </button>
                     <div class="calificacion-estrellas">
                         <ion-icon name="star" ></ion-icon>
                         <ion-icon name="star" ></ion-icon>
@@ -214,6 +238,9 @@
                     
                     <img src="assets/images/product-6.jpg" class="front">
                     <img src="assets/images/product-6_0.jpg" class="back">
+                    <button id="product6" class="iconProducts" href="./product.html">
+                      <ion-icon name="bag-add-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+                   </button>
                     <div class="calificacion-estrellas">
                         <ion-icon name="star" ></ion-icon>
                         <ion-icon name="star" ></ion-icon>
@@ -233,6 +260,9 @@
                     <div class="holder">
                     <img src="assets/images/product-7.jpg" class="front">
                     <img src="assets/images/product-7_0.jpg" class="back">
+                    <button id="product7" class="iconProducts" href="./product.html">
+                      <ion-icon name="bag-add-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+                   </button>
                     <div class="calificacion-estrellas">
                         <ion-icon name="star" ></ion-icon>
                         <ion-icon name="star" ></ion-icon>
@@ -252,6 +282,9 @@
                     
                     <img src="assets/images/product-8.jpg" class="front">
                     <img src="assets/images/product-8_0.jpg" class="back">
+                    <button id="product8" class="iconProducts" href="./product.html">
+                      <ion-icon name="bag-add-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+                   </button>
                     <div class="calificacion-estrellas">
                         <ion-icon name="star" ></ion-icon>
                         <ion-icon name="star" ></ion-icon>
@@ -276,7 +309,7 @@
         <!-- Products -->
 
         <!---------------------------------------- What your pet needs -------------------------------------------------->
-        <section class="pets-need">
+        <section class="pets-need" id="about">
           <div class="centrar"><img class="service-image" src="assets/images/service-image.png" alt="Perrito con ojitas" /></div>
           <h2 class="Letters-orange"><span>What your pet needs,</span> when they need it.</h2>
 
@@ -348,7 +381,7 @@
     </a>
 <!----------------------------------- FOOTER ----------------------------------- -->
 
-<footer class="footer" style="background-image: url('./assets/images/footer-bg.jpg')">
+<footer class="footer" style="background-image: url('./assets/images/footer-bg.jpg')" id="contact">
 
     <div class="footer-top section">
       <div class="container">
@@ -358,7 +391,7 @@
           <a href="#" class="logo">Kitter</a>
 
           <p class="footer-text">
-            If you have any question, please contact us at <a href="mailto:support@gmail.com" class="link">support@gmail.com</a>
+            If you have any question, please contact us at <span> <a href="mailto:support@gmail.com" class="link">support@gmail.com</a></span>
           </p>
 
           <ul class="contact-list">
