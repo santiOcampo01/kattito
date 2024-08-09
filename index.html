@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Bangers&amp;family=Carter+One&amp;family=Nunito+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-     
+     <link rel="shortcut icon" href="./assets/icons/favicon.svg" type="image/svg+xml">
+
   </head>
   <body>
 
@@ -81,7 +82,7 @@
             </div>
             <div class="card">
               <div class="img-categories"><img src="assets/images/category-5.jpg" /></div>
-              <a href="#" class="description">supplements for dogs</a>
+              <a href="#" class="description">Dog Sumpplements</a>
             </div>
           </div>
         </section>
@@ -89,24 +90,24 @@
         <section class="section offer" id="offer">
 
           <div class="container-offer"> 
-            <div class="cards-offer card-offer1">              
+            <div class="cards-offer card-offer1" style="background-image: url(/assets/images/offer-banner-1.jpg)">              
               <p>SELECTED ITEMS. ONLINE ONLY.</p>
-              <p>Hot Summer</p>
-              <p>Deals</p>
+              <h3>Hot Summer
+              <span>Deals</span></h3>
               <Button class="button-offer">read more</Button>
             </div>
 
-            <div class="cards-offer card-offer2">
+            <div class="cards-offer card-offer2" style="background-image: url(/assets/images/offer-banner-2.jpg);">
               <p>TREATS & GROOMING</p>
-              <p>Spoil your true </p>
-              <p>love</p>
+              <h3>Spoil your true 
+              <span>love</span></h3>
               <Button class="button-offer">read more</Button>
             </div>
 
-            <div class="cards-offer card-offer3">
+            <div class="cards-offer card-offer3" style="background-image: url(/assets/images/offer-banner-3.jpg);">
               <p>OUR BRAND YOU WILL LOVE</p>
-              <p>New in this </p>
-              <p>year</p>
+              <h3>New in this 
+              <span>year</span></h3>
               <Button class="button-offer" >read more</Button>
             </div>
 
@@ -117,16 +118,17 @@
         
         <section class="seccion-best-seller" id="best-sellers" >
           <div class="container-best-seller">
-            <h1 class="titulo-best-seller"><span>Best</span> Seller</h1>
-            <div>         
+            <h1 class="titulo-best-seller"><span>Best</span> Seller</h1>      
               <ul class="grid-container">
                 <li>
                   <div class="imgs-best-sellers">
+                    <div class="img-container">
                     <img src="assets/images/product-1.jpg" class="front">
                     <img src="assets/images/product-1_0.jpg" class="back">
                     <button id="product1" class="iconProducts" href="./product.html">
                        <ion-icon name="bag-add-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
                     </button>
+                    </div>
                     <div class="calificacion-estrellas">
                         <ion-icon name="star" ></ion-icon>
                         <ion-icon name="star" ></ion-icon>
@@ -143,13 +145,12 @@
                 </li>
                 <li>
                   <div class="imgs-best-sellers">
-                    <button id="product2" class="iconProducts" >
-                      <ion-icon name="bag-add-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
-                    </button>
-                    <div class="holder">
+                    <div class="img-container">
                     <img src="assets/images/product-2.jpg" class="front">
                     <img src="assets/images/product-2_0.jpg" class="back">
-                    <div class="buttonContainer">
+                      <button id="product2" class="iconProducts" >
+                        <ion-icon name="bag-add-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+                      </button>
                     </div>
                     <div class="calificacion-estrellas">
                         <ion-icon name="star" ></ion-icon>
@@ -162,15 +163,13 @@
                     
                     <a href="#">Commodo leo sed porta</a>
                     <data>$15.00</data>
-                    </div>
                   </div>
                 </li>
                 <li>
                   <div class="imgs-best-sellers">
-                    
+                    <div class="img-container">
                     <img src="assets/images/product-3.jpg" class="front">
                     <img src="assets/images/product-3_0.jpg" class="back">
-                    <div class="buttonContainer">
                     <button id="product3" class="iconProducts" href="./product.html">
                       <ion-icon name="bag-add-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
                    </button>
@@ -191,12 +190,13 @@
                 </li>
                 <li>
                   <div class="imgs-best-sellers">
-                   
+                   <div class="img-container">
                     <img src="assets/images/product-4.jpg" class="front">
                     <img src="assets/images/product-4_0.jpg" class="back">
                     <button id="product4" class="iconProducts" href="./product.html">
                       <ion-icon name="bag-add-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
                    </button>
+                   </div>
                     <div class="calificacion-estrellas">
                         <ion-icon name="star" ></ion-icon>
                         <ion-icon name="star" ></ion-icon>
@@ -213,12 +213,13 @@
                 </li>
                 <li>
                   <div class="imgs-best-sellers">
-                    
+                    <div class="img-container">
                     <img src="assets/images/product-5.jpg" class="front">
                     <img src="assets/images/product-5_0.jpg" class="back">
                     <button id="product5" class="iconProducts" href="./product.html">
                       <ion-icon name="bag-add-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
                    </button>
+                   </div>
                     <div class="calificacion-estrellas">
                         <ion-icon name="star" ></ion-icon>
                         <ion-icon name="star" ></ion-icon>
@@ -235,12 +236,13 @@
                 </li>
                 <li>
                   <div class="imgs-best-sellers">
-                    
+                    <div class="img-container">
                     <img src="assets/images/product-6.jpg" class="front">
                     <img src="assets/images/product-6_0.jpg" class="back">
                     <button id="product6" class="iconProducts" href="./product.html">
                       <ion-icon name="bag-add-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
                    </button>
+                  </div>
                     <div class="calificacion-estrellas">
                         <ion-icon name="star" ></ion-icon>
                         <ion-icon name="star" ></ion-icon>
@@ -252,17 +254,17 @@
                     
                     <a href="#">Commodo leo sed porta</a>
                     <data>$15.00</data>
-                    
                   </div>
                 </li>
                 <li>
                   <div class="imgs-best-sellers">
-                    <div class="holder">
+                    <div class="img-container">
                     <img src="assets/images/product-7.jpg" class="front">
                     <img src="assets/images/product-7_0.jpg" class="back">
                     <button id="product7" class="iconProducts" href="./product.html">
                       <ion-icon name="bag-add-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
                    </button>
+                  </div>
                     <div class="calificacion-estrellas">
                         <ion-icon name="star" ></ion-icon>
                         <ion-icon name="star" ></ion-icon>
@@ -274,17 +276,17 @@
                     
                     <a href="#">Commodo leo sed porta</a>
                     <data>$15.00</data>
-                    </div>
                   </div>
                 </li>
                 <li>
                   <div class="imgs-best-sellers">
-                    
+                    <div class="img-container">
                     <img src="assets/images/product-8.jpg" class="front">
                     <img src="assets/images/product-8_0.jpg" class="back">
                     <button id="product8" class="iconProducts" href="./product.html">
                       <ion-icon name="bag-add-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
                    </button>
+                  </div>
                     <div class="calificacion-estrellas">
                         <ion-icon name="star" ></ion-icon>
                         <ion-icon name="star" ></ion-icon>
@@ -301,7 +303,6 @@
                 </li>
 
               </ul>
-            </div>
           </div>
         </section>
         
@@ -545,7 +546,7 @@
       <div class="container">
 
         <p class="copyright">
-          © 2022 Made with ♥ by <a href="#" class="copyright-link">codewithsadee.</a>
+        Idea taked from <a href="#" class="copyright-link">codewithsadee</a> <span>made by <a href="#" class="copyright-link">@miguelGomez.</a> <a href="#" class="copyright-link">@santiOcampo.</a> <a href="#" class="copyright-link">@santiSuarez.</a></span>
         </p>
 
         <img src="./assets/images/payment.png" width="397" height="32" loading="lazy" alt="payment method" class="img">
