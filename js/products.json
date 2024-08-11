@@ -1,0 +1,106 @@
+[
+  {
+    "id": "producto1",
+    "name": "Ultamino food",
+    "imgs": {
+      "front": "assets/images/product-1.jpg",
+      "back": "assets/images/product-1_0.jpg"
+    },
+    "category": {
+      "name": "Dog Food",
+      "id": "food"
+    },
+    "price": "15.00"
+  },
+  {
+    "id": "producto2",
+    "name": "Shrimp pellets",
+    "imgs": {
+      "front": "assets/images/product-2.jpg",
+      "back": "assets/images/product-2_0.jpg"
+    },
+    "category": {
+      "name": "Fish Food",
+      "id": "food"
+    },
+    "price": "15.00"
+  },
+  {
+    "id": "producto3",
+    "name": "Shrimp pellets with fomula",
+    "imgs": {
+      "front": "assets/images/product-3.jpg",
+      "back": "assets/images/product-3_0.jpg"
+    },
+    "category": {
+      "name": "Fish Food",
+      "id": "food"
+    },
+    "price": "15.00"
+  },
+  {
+    "id": "producto4",
+    "name": "Fruit Blend",
+    "imgs": {
+      "front": "assets/images/product-4.jpg",
+      "back": "assets/images/product-4_0.jpg"
+    },
+    "category": {
+      "name": "Bird Food",
+      "id": "food"
+    },
+    "price": "15.00"
+  },
+  {
+    "id": "producto5",
+    "name": "Catty Toy",
+    "imgs": {
+      "front": "assets/images/product-5.jpg",
+      "back": "assets/images/product-5_0.jpg"
+    },
+    "category": {
+      "name": "Dog Food",
+      "id": "toys"
+    },
+    "price": "15.00"
+  },
+  {
+    "id": "producto6",
+    "name": "Confort zoug",
+    "imgs": {
+      "front": "assets/images/product-6.jpg",
+      "back": "assets/images/product-6_0.jpg"
+    },
+    "category": {
+      "name": "Cat Food",
+      "id": "food"
+    },
+    "price": "15.00"
+  },
+  {
+    "id": "producto7",
+    "name": "ProPlan veterinary",
+    "imgs": {
+      "front": "assets/images/product-7.jpg",
+      "back": "assets/images/product-7_0.jpg"
+    },
+    "category": {
+      "name": "Dog Food",
+      "id": "food"
+    },
+    "price": "15.00"
+  },
+  {
+    "id": "producto8",
+    "name": "Urinary care",
+    "imgs": {
+      "front": "assets/images/product-8.jpg",
+      "back": "assets/images/product-8_0.jpg"
+    },
+    "category": {
+      "name": "Dog Food",
+      "id": "food"
+    },
+    "price": "15.00"
+  }
+]
