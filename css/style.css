@@ -415,6 +415,7 @@ span {
   border: 1px solid var(--platinum);
   border-radius: 12px;
   overflow: hidden;
+  min-width: 100%;
    max-width: 100%;
     height: auto;
   }
@@ -428,6 +429,7 @@ span {
 
 .imgs-best-sellers .calificacion-estrellas {
   color: gray;
+  margin-top: 20px;
 }
 
 .imgs-best-sellers a {
@@ -754,4 +756,47 @@ a {
 
 li {
   list-style: none;
+}
+
+
+/* Regla base para dispositivos móviles */
+@media (max-width: 768px) {
+
+  .container-offer {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .cards-offer {
+    padding: 50px 10px 25px 15px;
+    font-size: 1rem;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+}
+
+/* Regla para tablets y pantallas medianas */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container-categories {
+    flex-wrap: wrap;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 1025px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .container-offer {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
