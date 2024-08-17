@@ -86,7 +86,7 @@ function loadProducts(products) { //Function to load all the products
       <p>${products.description}</p>
       <data>$${products.price}</data>
       <div class="containerButtons">
-      <a href="../index.html" class="backDescription">Volver</a>
+      <a href="index.html" class="backDescription">Volver</a>
       <button class="buttonAdd">Agregar al carrito</button>
       </div>
       </div>
