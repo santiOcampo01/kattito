@@ -1,9 +1,9 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const currentPage = document.body.id
+document.addEventListener('DOMContentLoaded', function () { //Wait for the DOM to be loaded before executing the code
+  const currentPage = document.body.id //Get the id of the current body to see wich page is being displayed
   header = document.querySelector('header')
   buttonBack = document.querySelector('.buttonBack')
   
-  window.addEventListener('scroll', function () {
+  window.addEventListener('scroll', function () { //For scroll of header and appear button back
   if (window.scrollY > 10) {
     header.classList.add('action')
     buttonBack.classList.add('action')
@@ -13,28 +13,28 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 })
 
-let products = []
+let products = [] //Array to store the products
 
-  fetch('./js/products.json')
+  fetch('./js/products.json') //Fetch the products from the json file
     .then(response => response.json())
     .then(data => {
       products = data
-      if (currentPage === 'main') {
-        loadProducts(products)
-      } else if (currentPage === 'productDescription') {
-              const id = new URLSearchParams(window.location.search).get('id')
-        const productDescription = products.find(product => product.id == id)
-        description(productDescription)
+      if (currentPage === 'main') { //Check if the current page is the main page to load all the products
+        loadProducts(products) 
+      } else if (currentPage === 'productDescription') { //Check if the current page is the product description page to load just the product selected
+              const id = new URLSearchParams(window.location.search).get('id') //Get the id of the product from the URL
+        const productDescription = products.find(product => product.id == id) //Find the product with the id (its like a for loop)
+        description(productDescription) //Call the function to load one product selected
       }
     })
 
-function loadProducts(products) {
+function loadProducts(products) { //Function to load all the products
   containerProducts = document.querySelector('.grid-container')
-  containerProducts.innerHTML = ''
-
-  products.forEach(element => {
-    const li = document.createElement('li')
-    li.innerHTML = `
+  containerProducts.innerHTML = '' //Clean the container of the products
+  products.forEach(element => { // Loop to load all the products
+    const li = document.createElement('li') //Create a li element
+    //Add the html to the li element
+    li.innerHTML = ` 
       <div class="imgs-best-sellers">
                     <a href="../productDescription.html?id=${element.id}">
                     <div class="img-container">
@@ -58,16 +58,14 @@ function loadProducts(products) {
                     </a>
                   </div>
       `
-    containerProducts.appendChild(li)
+    containerProducts.appendChild(li) //Add the li element to the container of the products
   })
 }
 
-    function description(products) {
+    function description(products) { //Function to load the product selected
       descriptionProduct = document.querySelector('#containerProductDescription')
-      header.backgroundColor = 'var(--portland-orange)'
-      header.style.hover = 'var(--portland-orange)'
-        window.addEventListener('scroll', function () {
-          header.style.position = this.window.scrollY > 10 ? 'fixed' : 'relative'
+        window.addEventListener('scroll', function () { //this is for the header in the description product, because we need to change the position there
+          header.style.position = this.window.scrollY > 10 ? 'fixed' : 'relative' //this is an if else but we are using a ternary operator
         })
           descriptionProduct.innerHTML = `
       <div class="product-description">
@@ -97,15 +95,4 @@ function loadProducts(products) {
         }
 
 })
-
-
-
-
-
-//  searchInput = document.querySelector('#search-btn')
-//  searchCuadro = document.querySelector('#searchInput')
-// searchInput.addEventListener('click', () => {
-//     searchCuadro.classList.add('inputSearchActive')
-//     }
-// )
 
