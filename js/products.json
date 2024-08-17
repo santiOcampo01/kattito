@@ -10,7 +10,8 @@
       "name": "Dog Food",
       "id": "food"
     },
-    "price": "15.00"
+    "price": "15.00",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc neceisque."
   },
   {
     "id": "producto2",
@@ -23,7 +24,8 @@
       "name": "Fish Food",
       "id": "food"
     },
-    "price": "15.00"
+    "price": "15.00",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc neceisque."
   },
   {
     "id": "producto3",
@@ -36,7 +38,8 @@
       "name": "Fish Food",
       "id": "food"
     },
-    "price": "15.00"
+    "price": "15.00",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc neceisque."
   },
   {
     "id": "producto4",
@@ -49,7 +52,8 @@
       "name": "Bird Food",
       "id": "food"
     },
-    "price": "15.00"
+    "price": "15.00",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc neceisque."
   },
   {
     "id": "producto5",
@@ -62,7 +66,8 @@
       "name": "Dog Food",
       "id": "toys"
     },
-    "price": "15.00"
+    "price": "15.00",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc neceisque."
   },
   {
     "id": "producto6",
@@ -75,7 +80,8 @@
       "name": "Cat Food",
       "id": "food"
     },
-    "price": "15.00"
+    "price": "15.00",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc neceisque."
   },
   {
     "id": "producto7",
@@ -88,7 +94,8 @@
       "name": "Dog Food",
       "id": "food"
     },
-    "price": "15.00"
+    "price": "15.00",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc neceisque."
   },
   {
     "id": "producto8",
@@ -101,6 +108,7 @@
       "name": "Dog Food",
       "id": "food"
     },
-    "price": "15.00"
+    "price": "15.00",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc neceisque."
   }
 ]

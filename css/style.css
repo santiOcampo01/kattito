@@ -369,8 +369,7 @@ span {
 .section-best-seller {
   margin: 20px 0;
   padding: 20px;
-  box-sizing: border-box
-  ;
+  box-sizing: border-box;
 }
 
 .titulo-best-seller {
@@ -384,8 +383,7 @@ span {
   margin-top: 800px;
 }
 
-
-.container-best-seller{
+.container-best-seller {
   padding-inline: 15px;
 }
 
@@ -410,13 +408,13 @@ span {
 }
 
 .imgs-best-sellers .img-container {
-  img{
-  display: block;
-  border: 1px solid var(--platinum);
-  border-radius: 12px;
-  overflow: hidden;
-  min-width: 100%;
-   max-width: 100%;
+  img {
+    display: block;
+    border: 1px solid var(--platinum);
+    border-radius: 12px;
+    overflow: hidden;
+    min-width: 100%;
+    max-width: 100%;
     height: auto;
   }
 }
@@ -592,7 +590,7 @@ span {
   display: flex;
   justify-content: center;
   list-style-type: none;
-  gap: 30px
+  gap: 30px;
 }
 .CardsPopular li {
   margin-right: 10px;
@@ -733,7 +731,7 @@ a {
 }
 
 .footer-list li:hover {
- cursor: pointer;
+  cursor: pointer;
   color: var(--portland-orange);
 }
 
@@ -743,10 +741,9 @@ a {
 
 .footer-bottom {
   padding: 20px;
-  .container
-  {
+  .container {
     display: flex;
-    justify-content:   space-between;
+    justify-content: space-between;
     align-items: center;
     span {
       display: block;
@@ -758,10 +755,8 @@ li {
   list-style: none;
 }
 
-
 /* Regla base para dispositivos móviles */
 @media (max-width: 768px) {
-
   .container-offer {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -776,7 +771,6 @@ li {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
-
 }
 
 /* Regla para tablets y pantallas medianas */
@@ -799,4 +793,142 @@ li {
   .container-offer {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.containerProductDescription {
+  margin-top: 50px;
+  background-color: var(--platinum);
+}
+
+.containerProduct {
+  position: relative;
+  padding: 50px;
+  background-color: var(--white);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerProduct .img-containerDescription {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.containerProduct .img-containerDescription img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.containerProduct .img-containerDescription .frontProduct {
+  position: relative;
+  z-index: 1;
+}
+
+.containerProduct .img-containerDescription .backProduct {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 0;
+}
+
+.containerProduct .img-containerDescription:hover .frontProduct {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.containerProduct .img-containerDescription:hover .backProduct {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.containerProduct .iconProducts {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px solid var(--platinum);
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  z-index: 2;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.containerProduct .iconProducts:hover {
+  background-color: var(--portland-orange);
+  color: var(--white);
+}
+
+.containerProduct .calificacion-estrellas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  color: var(--amber);
+}
+
+.containerProduct .calificacion-estrellas ion-icon {
+  font-size: 1.2rem;
+  margin-right: 2px;
+}
+
+.containerProduct .calificacion-estrellas .span {
+  margin-left: 8px;
+  color: var(--spanish-gray);
+  font-size: var(--fs-7);
+}
+
+.containerProduct .containerButtons {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.containerProduct .buttonAdd {
+  background-color: var(--portland-orange);
+  border-radius: 50px;
+  padding: 5px 10px;
+  font-family: var(--ff-nunito_sans);
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--white);
+  border: none;
+
+}
+  .buttonAdd:hover {
+    cursor: pointer;
+    background-color: green;
+    transition: ease 0.4s;
+  }
+
+.containerProduct .backDescription {
+  background-color: black;
+  color: var(--white);
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: var(--fw-700);
+
+}
+
+.containerProduct .backDescription:hover {
+  background-color: red;
+  transition: ease 0.4s;
+}
+
+.containerProduct data {
+  display: block;
+  margin-top: 10px;
+  font-size: var(--fs-4);
+  color: var(--portland-orange);
+  font-weight: var(--fw-700);
 }
