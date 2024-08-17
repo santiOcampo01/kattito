@@ -36,7 +36,7 @@ function loadProducts(products) { //Function to load all the products
     //Add the html to the li element
     li.innerHTML = ` 
       <div class="imgs-best-sellers">
-                    <a href="../productDescription.html?id=${element.id}">
+                    <a href="kattito/productDescription.html?id=${element.id}">
                     <div class="img-container">
                     <img src="${element.imgs.front}" class="front alt${element.name}">
                     <img src="${element.imgs.back}" class="back alt${element.name}">
